@@ -1,22 +1,18 @@
-function onSubmit(){
-  var score=0;
-  var numOfQuestions=3;
-  var ansArr = ['b','d','c'];
+function Check(){
+var question1 = document.quiz.question1.value;
+var question2 = document.quiz.question2.value;
+var question3 = document.quiz.question3.value;
+var correct = 0;
 
-  var q1 = document.forms['quiz']['q1'].value;
-  var q1 = document.forms['quiz']['q2'].value;
-  var q1 = document.forms['quiz']['q3'].value;
-
-  for(var i =1; i <= numOfQuestions; i++){if(eval('q' + i) == ''){
-    alert(" You missed question number " + i);
+  if (question1 == "ECMAScript") {
+    correct ++;
   }
-}
-  for(var i =1; i <= numOfQuestions; i++){if(eval('q' + i) == ansArr[i-1]){ score++;
+  if (question2 == "Brendan Eich") {
+    correct ++;
   }
-}
-
-var results= document.getElementbyId('results')
-results.innerHTML="<h2>You Scored " + score + " points out of " + numOfQuestions + "</h2>"
-alert(' You scored ' + score + 'out of' + numOfQuestions)
-return false;
+  if (question3 == "Slides") {
+    correct ++;
+  }
+  document.getElementById("after-submit").style.visibility = "visible";
+  document.getElementById("number-correct").innerHTML = "You got " + correct + " correct.";
 }

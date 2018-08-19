@@ -11,27 +11,31 @@
 
         <h1> Brian's Quiz Board</h1>
 
-        <formid ="quiz" name = "quiz">
+        <form id ="quiz" name = "quiz">
 
           <p> What standard is javascript based on?</p>
-          <input type="radio" id="mc" name="q1" value="a">a. JS<br>
-          <input type="radio" id="mc" name="q1" value="b">b. ECMAScript<br>
-          <input type="radio" id="mc" name="q1" value="c">c. C++<br>
-          <input type="radio" id="mc" name="q1" value="d">d. Java<br>
+          <input type="radio" id="mc" name="question1" value= "JS"> JS<br>
+          <input type="radio" id="mc" name="question1" value= "ECMAScript"> ECMAScript<br>
+          <input type="radio" id="mc" name="question1" value= "C++"> C++<br>
+          <input type="radio" id="mc" name="question1" value= "Java"> Java<br>
 
           <p> Who designed Javascript?</p>
-          <input type="radio" id="mc" name="q2" value="a">a. Chris Beard<br>
-          <input type="radio" id="mc" name="q2" value="b">b. John Resig<br>
-          <input type="radio" id="mc" name="q2" value="c">c. Mitchell Baker<br>
-          <input type="radio" id="mc" name="q2" value="d">d. Brendan Eich<br>
+          <input type="radio" id="mc" name="question2" value= "Chris Beard"> Chris Beard<br>
+          <input type="radio" id="mc" name="question2" value= "John Resig"> John Resig<br>
+          <input type="radio" id="mc" name="question2" value= "Mitchell Baker"> Mitchell Baker<br>
+          <input type="radio" id="mc" name="question2" value= "Brendan Eich"> Brendan Eich<br>
 
           <p> Which one is not a form input type?</p>
-          <input type="radio" id="mc" name="q3" value="a">a. Radio buttons<br>
-          <input type="radio" id="mc" name="q3" value="b">b. Check boxes<br>
-          <input type="radio" id="mc" name="q3" value="c">c. Slides<br>
-          <input type="radio" id="mc" name="q3" value="d">d. Date<br>
+          <input type="radio" id="mc" name="question3" value="Radio buttons"> Radio buttons<br>
+          <input type="radio" id="mc" name="question3" value="Check boxes"> Check boxes<br>
+          <input type="radio" id="mc" name="question3" value="Slides"> Slides<br>
+          <input type="radio" id="mc" name="question3" value="Date"> Date<br>
 
-      <input id ="button" type= "button" value = "Submit Quiz" onclick ="Check();"
+      <input id ="button" type= "button" value = "Submit Quiz" onclick = "Check();"
 
+    </form>
+    <div id = "after-submit">
+      <p id = "number-correct"></p>
+    </div>
     </body>
     </html>
