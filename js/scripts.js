@@ -13,7 +13,7 @@ var correct = 0;
   if (question3 == "Slides") {
     correct ++;
   }
-
+  
 
   document.getElementById("after-submit").style.visibility = "visible";
   document.getElementById("number-correct").innerHTML = "You got " + correct + " correct.";
